@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- On All web pages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tip 🔢 Calculator</title>
+
+    <!-- Link to favicon -->
+    <link rel="icon" href="images/favicon-32x32.png">
+
+    <!-- Link to Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS  file-->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <img src="images/logo.svg" alt="logo-splitter-calculator">
+    <br>
+    <div class="container-all">
+
+        <div class="left-side">
+
+          <label class = "left-labels" for="bill">Bill</label>
+            <br>
+              <input class="input-leftside first" type="text" name="bill" value = "">
+              <img class="dollar-icon" src="images/icon-dollar.svg" alt="image-dollar">
+            <br>
+          <label class = "left-labels" for="">Select Tip %</label>
+            <br>
+            <button type="button" class="f tip" name="button5%" value="5%">5%</button>
+            <button type="button" class="t tip" name="button10%" value="10%">10%</button>
+            <button type="button" class="fe tip" name="button15%" value="15%">15%</button>
+
+            <button type="button" class="tw tip" name="button25%" value="25%">25%</button>
+            <button type="button" class="fi tip" name="button50%" value="50%">50%</button>
+            <input type="button" class="custom tip" name="" value="Custom">
+            <br>
+          <label class = "left-labels" for="people">Number of People</label>
+          <span class="number-people"></span>
+            <br>
+              <input class="input-leftside second" type="text" name="people" value = "">
+            <img class="person-icon" src="images/icon-person.svg" alt="image-person">
+            <br>
+
+        </div>
+
+            <div class="right-side">
+              <table class="tip-amount">
+                <tbody>
+                  <tr>
+                      <td class="tip-rightside first-row">Tip Amount <br><span>/ person</span> </td>
+                      <td class="tip-rightside outcome"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="total">
+                <tbody>
+                  <tr>
+                      <td class="tip-rightside first-row">Total <br><span>/ person</span></td>
+                      <td class="tip-rightside outcome"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <br>
+                <button class = "reset-button" type="button" name="reset">RESET</button>
+
+
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

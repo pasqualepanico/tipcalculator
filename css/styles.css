@@ -1,0 +1,282 @@
+body{
+  background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  margin: 0;
+}
+
+/* Splitter img */
+img{
+  margin-bottom: 60px;
+  margin-top: 140px;
+}
+
+/* overall container div*/
+.container-all{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 28px 22px;
+  height:280px;
+}
+
+/* div for the left side of the calc */
+.left-side{
+  text-align: left;
+  display: inline-block;
+  /* height: 304px; */
+  width:260px;
+}
+
+/* Classes of left-side div */
+
+.left-labels{
+  color: hsl(184, 14%, 56%);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.input-leftside{
+  background-color: hsl(189, 41%, 97%);
+
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  width: 95%;
+  height: 28px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 10px 0 0;
+  text-align: right;
+}
+
+.dollar-icon{
+  margin: 0;
+  position: relative;
+  left: 14px;
+  bottom: 24px;
+}
+
+.person-icon{
+  margin: 0;
+  position: relative;
+  left: 14px;
+  bottom: 24px;
+}
+
+/* Styling buttons */
+
+.tip{
+  background-color: hsl(183, 100%, 15%);
+  border-style: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  height: 30px;
+  padding: 0;
+  width: 78px;
+
+}
+
+.custom{
+  background-color: hsl(189, 41%, 97%);
+  border-style: none;
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 20px;
+}
+
+.f{
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.fe{
+  margin-bottom: 8px;
+}
+
+.t{
+  margin-bottom: 5px;
+}
+
+/* div for the right side of the calc */
+
+.right-side{
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  display: inline-block;
+  width:260px;
+  position:relative;
+  bottom: 28px;
+}
+
+/* moving the 2 tables at the top */
+
+.tip-amount{
+  margin-top: 30px;
+}
+
+.total{
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+
+/* Styling the outcome */
+
+.outcome{
+  font-size: 32px;
+  font-weight:700;
+  color: hsl(172, 67%, 45%);
+}
+
+/* Styling the first row of the right side div */
+
+.first-row{
+  color: hsl(0, 0%, 100%);
+  font-size: 11px;
+  font-weight:500;
+  height: 50px;
+  padding-left:20px;
+  padding-right: 45px;
+  text-align: left;
+  width: 68px;
+}
+
+span{
+  color: hsl(186, 14%, 43%);
+  font-size: 9px;
+  font-weight:400;
+}
+
+.people{
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+
+}
+
+.number-people{
+  margin-left: 68px;
+  color: red;
+  text-align: right;
+}
+
+.reset-button{
+  margin-bottom: 30px;
+  background-color: hsl(172, 67%, 45%);
+  border:0;
+  color:hsl(183, 100%, 15%);
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 9px 0;
+  width:220px
+}
+
+/* Active state with hover */
+
+.custom:hover{
+  border-style: solid;
+  border-color: hsl(172, 67%, 45%);
+  border-width: 2px;
+}
+
+.f:hover{
+  background-color: #C2FFF9;
+  color:hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.t:hover{
+  background-color: #C2FFF9;
+  color:hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.fe:hover{
+  background-color: #C2FFF9;
+  color:hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.tw:hover{
+  background-color: #C2FFF9;
+  color:hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.fi:hover{
+  background-color: #C2FFF9;
+  color:hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.reset-button:hover{
+  background-color: #C2FFF9;
+}
+
+/* Styling for mobile device */
+
+@media only screen and (max-width: 600px) {
+
+  img{
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .container-all{
+    height: auto;
+    width: 220px;
+  }
+
+  .left-side{
+    display: block;
+    margin: auto;
+    width: 220px;
+  }
+
+  .right-side{
+    position: static;
+    width: 210px;
+  }
+
+  .tip{
+    width: 90px;
+  }
+
+  .f, .fe, .fi, .left-labels, .dollar-icon, .person-icon{
+    margin-left: 15px;
+  }
+
+  .input-leftside{
+    margin-left: 15px;
+    width: 85%;
+  }
+
+  .tip-amount{
+    margin-top: 15px;
+  }
+
+  .total{
+    margin: 0;
+  }
+
+  .reset-button{
+    margin-bottom: 15px;
+    width: 190px;
+  }
+
+  .first-row{
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  .number-people{
+    margin-left: 10px;
+  }
+}
+
+/* For active states and Animations */
+
+.first-input{
+  border-color: hsl(172, 67%, 45%);
+  border-style: solid;
+  border-width: 2px;
+}
